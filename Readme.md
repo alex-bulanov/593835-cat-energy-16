@@ -1,8 +1,8 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Буланов](https://up.htmlacademy.ru/adaptive/16/user/593835).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Егор Король](
+https://htmlacademy.ru/profile/id501115).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
