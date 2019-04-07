@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Oswald Medium";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald Regular";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import "visually-hidden";
+@import "wrapper";
+@import "container";
+@import "page-header/page-header";
+@import "page-header/logo-mobile";
+@import "page-header/main-nav/main-nav";
+@import "page-header/main-nav/site-list";
+@import "page-header/main-nav/site-list__link";
+@import "page-main/intro/intro";
+@import "page-main/button";
+@import "page-main/products-categories/categories-list/categories-list";
+@import "page-main/products-categories/categories-list/categories-item/categories-item";
+@import "page-main/products-categories/categories-list/categories-item/categories-item__title";
+@import "page-main/products-categories/categories-list/categories-item/categories-item__button";
+@import "page-main/products-categories/categories-list/categories-item/categories-item__description";
+@import "page-main/advantages/advantages";
+@import "page-main/advantages/advantages__title";
+@import "page-main/advantages/advantages__list";
+@import "page-main/advantages/advantages__item";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+}
