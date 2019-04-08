@@ -8,13 +8,13 @@
   <body>
     <header class="page-header container">
       <a class="page-header__logo logo" href="" id="index-logo">
-        <img class="page-header__logo-image logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="логотип магазина «Cat Energy»">
+        <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="логотип магазина «Cat Energy»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__site-list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог Продукции</a>
@@ -37,15 +37,15 @@
         <h2 class="visually-hidden">Категории продуктов Кэт энерджи</h2>
         <ul class="products-categories__categories-list categories-list
         ">
-          <li class="categories-list__categories-item categories-item categories-item--slim">
-            <h3 class="categories-item__title categories-item__title--slim">Похудение</h3>
-            <p class="categories-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="categories-item__button categories-item__button--slim" href="catalog.html">Каталог Slim</a>
+          <li class="categories-list__item categories-item--slim">
+            <h3 class="categories-list__title categories-list__title--slim">Похудение</h3>
+            <p class="categories-list__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="categories-list__button categories-list__button--slim" href="catalog.html">Каталог Slim</a>
           </li>
-          <li class="categories-list__categories-item categories-item categories-item--pro">
-            <h3 class="categories-item__title categories-item__title--pro">Набор массы</h3>
-            <p class="categories-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="categories-item__button categories-item__button--pro" href="catalog.html">Каталог pro</a>
+          <li class="categories-list__item categories-list__item--pro">
+            <h3 class="categories-list__title categories-list__title--pro">Набор массы</h3>
+            <p class="categories-list__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="categories-list__button categories-list__button--pro" href="catalog.html">Каталог pro</a>
           </li>
         </ul>
       </section>
@@ -83,9 +83,11 @@
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <span class="page-footer__slogan">приглашаем к сотрудничеству дилеров!</span>
-      <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img class="page-footer__map" src="http://placehold.it/320x400" width="320" height="400" alt="схема проезда к офису Интернет-магазина «Cat Energy»">
+      <div class="page-footer__wrapper wrapper">
+        <span class="page-footer__slogan">приглашаем<br> к сотрудничеству дилеров!</span>
+        <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <img class="page-footer__map container" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="схема проезда к офису Интернет-магазина «Cat Energy»">
       <a class="page-footer__title" href="index.html">
         <img class="page-footer__title-image" src="http://placehold.it/128x24" width="128" height="24" alt="Интернет-магазина «Cat Energy»">
       </a>
