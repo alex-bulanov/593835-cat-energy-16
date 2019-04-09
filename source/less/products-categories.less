@@ -1,0 +1,131 @@
+.categories-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.categories-list__item {
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+}
+
+.categories-list__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-left: 92px;
+  position: relative;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
+
+.categories-list__title--slim {
+  &::after {
+    left: 22px;
+    top: -5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    top: -8px;
+    left: 30px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
+
+.categories-list__title--pro {
+  &::after {
+    top: -6px;
+    left: 22px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 5px;
+    left: 13px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
+
+.categories-list__description {
+  margin: 0 20px;
+  margin-bottom: 19px;
+  padding-bottom: 21px;
+  width: 240px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.categories-list__button {
+  margin-left: 20px;
+  position: relative;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.categories-list__button--slim {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 97px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+  }
+}
+
+.categories-list__button--pro {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 95px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+  }
+}

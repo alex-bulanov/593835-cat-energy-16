@@ -3,52 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="" id="index-logo">
-        <img class="page-header__logo-image" src="http://placehold.it/33x138" width="33" height="38" alt="логотип магазина «Cat Energy»">
-        <img class="page-header__title-image" src="http://placehold.it/101x18" width="101" height="18" alt="Интернет-магазина «Cat Energy»">
+    <header class="page-header container">
+      <a class="page-header__logo logo" href="" id="index-logo">
+        <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="логотип магазина «Cat Energy»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a>Главная</a>
+        <ul class="main-nav__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог Продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор Программы</a>
+            <a class="site-list__link" href="form.html">Подбор Программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин «Cat Energy»</h1>
-      <section class="intro">
+      <section class="intro wrapper">
         <h2 class="intro__title">Функциональное питание для котов</h2>
         <b class="intro__slogan">Занялся собой? Займись котом!</b>
-        <img class="intro__profuct-image" src="http://placehold.it/280x270" width="280" height="270" alt="Изображеие «Cat Energy Курица»">
+        <img class="intro__profuct-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображеие «Cat Energy Курица»">
         <a class="intro__button button" href="#">Подобрать программу</a>
       </section>
-      <section class="products-categories">
+      <section class="products-categories wrapper">
         <h2 class="visually-hidden">Категории продуктов Кэт энерджи</h2>
-        <ul class="products-categories__categories-list categories-list">
-          <li class="categories-list__item categories-list__item--slim">
-            <h3 class="categories-list__title">Похудение</h3>
+        <ul class="products-categories__categories-list categories-list
+        ">
+          <li class="categories-list__item categories-item--slim">
+            <h3 class="categories-list__title categories-list__title--slim">Похудение</h3>
             <p class="categories-list__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="categories-list__button categories-list__button--slim" href="catalog.html">Каталог Slim</a>
           </li>
-          <li class="categories-list__item categories-list__item--weight">
-            <h3 class="categories-list__title">Набор массы</h3>
+          <li class="categories-list__item categories-list__item--pro">
+            <h3 class="categories-list__title categories-list__title--pro">Набор массы</h3>
             <p class="categories-list__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="categories-list__button categories-list__button--weight" href="catalog.html">Каталог pro</a>
+            <a class="categories-list__button categories-list__button--pro" href="catalog.html">Каталог pro</a>
           </li>
         </ul>
       </section>
-      <section class="advantages">
+      <section class="advantages wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--substance">
@@ -82,9 +83,11 @@
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <span class="page-footer__slogan">приглашаем к сотрудничеству дилеров!</span>
-      <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img class="page-footer__map" src="http://placehold.it/320x400" width="320" height="400" alt="схема проезда к офису Интернет-магазина «Cat Energy»">
+      <div class="page-footer__wrapper wrapper">
+        <span class="page-footer__slogan">приглашаем<br> к сотрудничеству дилеров!</span>
+        <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <img class="page-footer__map container" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="схема проезда к офису Интернет-магазина «Cat Energy»">
       <a class="page-footer__title" href="index.html">
         <img class="page-footer__title-image" src="http://placehold.it/128x24" width="128" height="24" alt="Интернет-магазина «Cat Energy»">
       </a>
