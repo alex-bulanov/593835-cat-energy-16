@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>Кэт энерджи / Форма</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/33x138" width="33" height="38" alt="логотип магазина «Cat Energy»">
-        <img class="page-header__title-image" src="http://placehold.it/101x18" width="101" height="18" alt="магазина «Cat Energy»">
+    <header class="page-header container">
+      <a class="page-header__logo logo" href="index.html" id="index-logo">
+        <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="логотип магазина «Cat Energy»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a href="index.html">Главная</a>
+        <ul class="main-nav__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог Продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a>Подбор Программы</a>
+            <a class="site-list__link site-list__link--current">Подбор Программы</a>
           </li>
         </ul>
       </nav>

@@ -30,7 +30,7 @@
       <section class="intro wrapper">
         <h2 class="intro__title">Функциональное питание для котов</h2>
         <b class="intro__slogan">Занялся собой? Займись котом!</b>
-        <img class="intro__profuct-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображеие «Cat Energy Курица»">
+        <img class="intro__product-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображеие «Cat Energy Курица»">
         <a class="intro__button button" href="#">Подобрать программу</a>
       </section>
       <section class="products-categories wrapper">
@@ -66,18 +66,25 @@
           </li>
         </ul>
       </section>
-      <section class="example">
+      <section class="example container">
+        <div class="example__wrapper wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <p class="example__weight">снижение веса <span class="example__weight-value">5 кг</span></p>
-        <p class="example__time">затрачено времени <span class="example__time-value">60 дней</span></p>
+        <div class="example__plate example__plate--weight">
+          <span class="example__value example__value--weight">5 кг</span>
+          <p class="example__plate-text example__plate-text--weight">снижение веса</p>
+        </div>
+        <div class="example__plate example__plate--time">
+          <span class="example__value example__value--time">60 дней</span>
+          <p class="example__plate-text example__plate-text--time">затрачено времени</p>
+        </div>
         <b class="example__stats">Затраты на питание: 15 000 руб.</b>
+        </div>
         <div class="slider">
-          <img class="slider__image" src="http://placehold.it/311x232" width="311" height="232" alt="Кот до">
+          <img class="slider__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до">
           <div class="slider__toggles">
             <button class="slider__toggle" type="button">Было</button>
             <button class="slider__toggle" type="button">Стало</button>
-          </div>
         </div>
       </section>
     </main>
@@ -87,7 +94,9 @@
         <span class="page-footer__slogan">приглашаем<br> к сотрудничеству дилеров!</span>
         <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <img class="page-footer__map container" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="схема проезда к офису Интернет-магазина «Cat Energy»">
+      <div class="page-footer__map container">
+        <div class="page-footer__map-pin">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+      </div>
       <a class="page-footer__title" href="index.html">
         <img class="page-footer__title-image" src="http://placehold.it/128x24" width="128" height="24" alt="Интернет-магазина «Cat Energy»">
       </a>
