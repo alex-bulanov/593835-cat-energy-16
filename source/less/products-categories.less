@@ -1,9 +1,7 @@
 .categories-list {
-  margin: 0;
-  padding: 0;
+  .list-reset();
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
 }
 
 .categories-list__item {
@@ -14,6 +12,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #f2f2f2;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .categories-list__title {

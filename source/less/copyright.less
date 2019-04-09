@@ -6,7 +6,7 @@
 }
 
 .copyright__link {
-  padding-top: 31px;
+  padding-top: 30px;
   padding-bottom: 31px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -18,5 +18,14 @@
 
 .copyright__logo {
   padding: 0;
-  outline: 1px solid red;
+  padding-top: 18px;
+
+  &:hover .copyright__logo--path,
+  &:focus .copyright__logo--path {
+    fill: #68b738;
+  }
+
+  &:active .copyright__logo--path {
+    opacity: 0.3;
+  }
 }
