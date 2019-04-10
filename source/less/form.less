@@ -1,0 +1,123 @@
+.form {
+  padding-top: 15px;
+}
+
+.form__title {
+  .section-title();
+  margin-bottom: 25px;
+  color: #111111;
+}
+
+.form__description {
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+  width: 235px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9px;
+  border: none;
+}
+
+.form__fieldset--program {
+  padding-top: 15px;
+  padding-bottom: 13px;
+  border: 1px solid #ededed;
+}
+
+.form__wrapper--program {
+  width: 318px;
+}
+
+.form__content {
+  margin: 0;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__content-label {
+  margin: 0;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-right: 14px;
+  padding: 0;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  cursor: pointer;
+}
+
+.form__content-label--weight {
+  margin-right: 17px;
+}
+
+.form__content-label--age {
+  margin-right: 16px;
+}
+
+.form__input {
+  padding: 12px 14px 13px 15px;
+  flex-grow: 1;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #e6e6e6;
+}
+
+.form__filter-list {
+  .list-reset();
+}
+
+.form__option {
+  margin-bottom: 6px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+
+  &:nth-of-type(2) {
+    margin-bottom: 5px;
+  }
+}
+
+.form__content-label--radio {
+  padding-left: 46px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+  }
+}
+
+.filter-input-radio:checked + .checkbox-indicator {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 12px;
+    height: 12px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
