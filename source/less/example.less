@@ -1,9 +1,11 @@
 .example {
+  .container();
   padding-top: 17px;
   background-color: #f2f2f2;
 }
 
 .example__wrapper {
+  .wrapper();
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -17,11 +19,6 @@
 .example__description {
   margin-bottom: 25px;
   width: 267px;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: #444444;
 }
 
 .example__plate {
@@ -39,8 +36,6 @@
 .example__value {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
@@ -52,24 +47,17 @@
   left: 50%;
   top: 34px;
   width: 87px;
-  font-family: "Arial", sans-serif;
   font-size: 12px;
-  font-weight: 400;
   line-height: 12px;
-  color: #444444;
   text-align: center;
   background-color: #f2f2f2;
   transform: translateX(-44px);
 }
 
 .example__stats {
-  margin-bottom: 34px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 34px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;

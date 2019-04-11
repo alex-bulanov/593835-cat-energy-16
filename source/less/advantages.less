@@ -1,6 +1,11 @@
 .advantages {
-  padding-top: 17px;
-  padding-bottom: 37px;
+  .wrapper();
+  padding: 17px 20px 37px;
+}
+
+.advantages__section-title {
+  .section-title();
+  margin-bottom: 23px;
 }
 
 .advantages__list {
@@ -16,10 +21,6 @@
   padding-right: 0;
   padding-left: 81px;
   position: relative;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
 
   &::before {
     content: "";
@@ -67,9 +68,4 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-}
-
-.advantages__section-title {
-  .section-title();
-  margin-bottom: 23px;
 }

@@ -1,7 +1,7 @@
 .social-list {
-  .list-reset();
   margin: 0 20px;
-  padding: 0 20px;
+  padding: 0 65px;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -13,14 +13,11 @@
   fill: #444444;
 }
 
-
 .social-list__item {
-  padding-top: 24px;
-  padding-bottom: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  width: 46px;
 
   &:hover .social-list__path,
   &:focus .social-list__path {
@@ -32,17 +29,15 @@
   }
 }
 
-.social-list__item--vkontakte {
-  margin-left: 43px;
+.social-list__link {
+  padding: 24px 10px 17px;
+}
+
+.social-list__link--vkontakte {
   padding-left: 2px;
 }
 
-.social-list__item--instagram {
-  padding-left: 10px;
-}
-
-.social-list__item--facebook {
-  margin-right: 53px;
+.social-list__link--facebook {
   padding-top: 22px;
-  padding-left: 12px;
+  padding-right: 8px;
 }

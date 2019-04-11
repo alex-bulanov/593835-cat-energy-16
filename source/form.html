@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="page-header container">
+    <header class="page-header">
       <a class="page-header__logo logo" href="index.html" id="index-logo">
         <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="логотип магазина «Cat Energy»">
       </a>
@@ -73,7 +73,6 @@
               </ul>
             </div>
           </fieldset>
-
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset__fieldset-title fieldset-title fieldset-title--contacts">Контактные данные (владельца кота)</legend>
             <p class="fieldset__content">
@@ -85,9 +84,6 @@
               <input class="form__form-input form-input form-input--phone" type="tel" name="phone" id="field-phone" placeholder="8 (960) 900-60-90">
             </p>
           </fieldset>
-
-
-
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset__fieldset-title fieldset-title fieldset-title--comment">Комментарий</legend>
             <textarea class="form__form-textarea form-textarea" name="comment"  cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
@@ -120,30 +116,24 @@
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__сaution сaution">* — Обязательные поля</p>
         </form>
-
-
-
-
-
       </section>
-
-
-
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper contacts__wrapper">
+          <span class="contacts__slogan">приглашаем<br> к сотрудничеству дилеров!</span>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map container">
+          <div class="contacts__map-pin">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+        </div>
+      </section>
     </main>
-    <footer class="page-footer container">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="page-footer__wrapper wrapper">
-        <span class="page-footer__slogan">приглашаем<br> к сотрудничеству дилеров!</span>
-        <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <div class="page-footer__map container">
-        <div class="page-footer__map-pin">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
-      </div>
-      <a class="page-footer__title wrapper" href="index.html">
+    <footer class="page-footer">
+      <a class="page-footer__title" href="index.html">
         <img class="page-footer__title-image" src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазина «Cat Energy»">
       </a>
       <ul class="page-footer__social-list social-list">
-        <li class="social-list__item social-list__item--vkontakte">
+        <li class="social-list__item social-list__item">
           <a class="social-list__link social-list__link--vkontakte" href="#" target="_blank" rel="nofollow noopener" title="Наш Вконтакте">
             <span class="visually-hidden">Вконтакте</span>
             <svg width="22" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" xml:space="preserve">
@@ -168,8 +158,8 @@
             </svg>
           </a>
         </li>
-        <li class="social-list__item social-list__item--instagram">
-          <a class="social-list__link social-list__link--instagram" href="#" target="_blank" rel="nofollow noopener" title="Наш Инстаграм">
+        <li class="social-list__item social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="index.html" target="_blank" rel="nofollow noopener" title="Наш Инстаграм">
               <span class="visually-hidden">Инстаграм</span>
               <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
                 <path class="social-list__path" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
@@ -180,7 +170,7 @@
               </svg>
           </a>
         </li>
-        <li class="social-list__item social-list__item--facebook">
+        <li class="social-list__item social-list__item">
           <a class="social-list__link social-list__link--facebook" href="#" target="_blank" rel="nofollow noopener" title="Наш Фейсбук">
             <span class="visually-hidden">Фейсбук</span>
             <svg width="10" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" xml:space="preserve">
