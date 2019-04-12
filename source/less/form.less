@@ -9,8 +9,7 @@
 }
 
 .form__description {
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
   padding: 0;
   width: 235px;
   font-family: "Oswald Regular", "Arial", sans-serif;
@@ -23,15 +22,18 @@
 
 .form__fieldset {
   margin: 0;
-  padding: 0;
-  padding-bottom: 9px;
+  padding: 0 0 9px;
   border: none;
 }
 
 .form__fieldset--program {
-  padding-top: 15px;
-  padding-bottom: 13px;
+  margin-bottom: 28px;
+  padding: 15px 0 13px;
   border: 1px solid #ededed;
+}
+
+.form__fieldset--contacts {
+  padding: 20px 20px 20px;
 }
 
 .form__wrapper--program {
@@ -39,19 +41,16 @@
 }
 
 .form__content {
-  margin: 0;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
 }
 
 .form__content-label {
-  margin: 0;
-  margin-top: -1px;
-  margin-left: -1px;
-  margin-right: 14px;
-  padding: 0;
+  width: 51px;
+  flex-shrink: 0;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -61,23 +60,57 @@
 }
 
 .form__content-label--weight {
-  margin-right: 17px;
+  width: 76px;
 }
 
 .form__content-label--age {
-  margin-right: 16px;
+  width: 108px;
+
+  outline: 1px solid pink;
+}
+
+.form__content-label--email {
+  width: 61px;
+}
+
+.form__content-label--phone {
+  width: 77px;
+}
+
+.form__icon {
+  position: absolute;
+
+  &--email {
+    top: 14px;
+    right: 13px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+  }
 }
 
 .form__input {
-  padding: 12px 14px 13px 15px;
+  padding: 12px 50px 13px 15px;
   flex-grow: 1;
+  width: 100%;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #e6e6e6;
+
+  &:focus {
+    border-color: #444444;
+  }
 }
+/*
+.form__input::-webkit-input-placeholder {color:#444444;}
+.form__input::-moz-placeholder          {color:#444444;}/* Firefox 19+ */
+/*.form__input:-moz-placeholder           {color:#444444;} Firefox 18- */
+/*.form__input:-ms-input-placeholder      {color:#444444;}*/
 
 .form__filter-list {
   .list-reset();
@@ -119,5 +152,31 @@
     height: 12px;
     background-color: #68b738;
     border-radius: 50%;
+  }
+}
+
+.form__fieldset-title {
+  margin: 0;
+  padding: 0;
+  width: 190px;
+  position: relative;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.form__fieldset-title--contacts {
+  margin-bottom: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -110px;
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
   }
 }
