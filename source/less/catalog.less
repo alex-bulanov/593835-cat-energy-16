@@ -1,0 +1,130 @@
+.catalog {
+  .container();
+  padding-top: 15px;
+}
+
+.catalog__section-title {
+  .section-title();
+  .wrapper();
+  margin-bottom: 28px;
+}
+
+.catalog__catalog-list {
+  .list-reset();
+}
+
+.catalog__item {
+  padding: 0 19px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 320px;
+  border: 1px solid #ededed;
+  border-bottom: none;
+
+  &:last-of-type .catalog__wrapper {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.catalog__item-image {
+  width: 140px;
+}
+
+.catalog__item-info {
+  padding-top: 22px;
+  width: 140px;
+}
+
+.catalog__item-title {
+  margin: 0 0 12px 0;
+  width: 80px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog__button {
+  .button();
+  width: 100%;
+  font-size: 16px;
+}
+
+.catalog__item-table {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  border-collapse: collapse;
+}
+
+.catalog__item-td {
+  padding: 0;
+  text-align: left;
+
+  &:last-of-type {
+    text-align: right;
+  }
+}
+
+.catalog__more {
+  padding: 40px 19px 24px;
+  border: 1px solid #ededed;
+}
+
+.catalog__plus {
+  margin: 0 auto 38px;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  border: 1px solid #d3d3d3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 30px;
+    height: 2px;
+    border: 1px solid #d3d3d3;
+    transform: rotate(90deg);
+  }
+}
+
+.catalog__more-title {
+  margin: 0 auto 7px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  word-wrap: break-word;
+}
+
+.catalog__more-description {
+  margin: 0 auto 21px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.catalog__more__button {
+  .button();
+  padding-bottom: 9px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #f2f2f2;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+}
