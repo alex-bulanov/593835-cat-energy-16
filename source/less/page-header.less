@@ -3,10 +3,26 @@
   padding-top: 13px;
   display: flex;
   flex-direction: column;
-  width: 320px;
 }
 
 .page-header__logo {
-  margin-bottom: 14px;
-  margin-left: 20px;
+  margin: 0 0 14px 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    margin-bottom: 14px;
+    margin-left: 20px;
+  }
+}
+
+/*@media (min-width: @desktop-width) {
+
+}
+*/

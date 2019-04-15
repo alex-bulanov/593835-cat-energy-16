@@ -1,17 +1,20 @@
 .intro {
-  .wrapper();
+  .container();
   margin-bottom: 22px;
   padding-top: 26px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: #63a73a;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#63a73a 0%, #63a73a 305px, #ffffff 305px, #ffffff 100%);
   background-repeat: no-repeat;
+  background-position: 50% 166px, 50% 0, 0 0;
   word-wrap: break-word;
 }
 
 .intro__title {
-  margin: 0 0 26px 0;
+  margin: 0 auto 26px;
+  width: 256px;
   font-family: "Oswald Regular", "Helvetica", sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -21,7 +24,7 @@
 }
 
 .intro__slogan {
-  margin: 0 auto 28px;
+  margin: 0 auto 302px;
   width: 280px;
   font-family: "Oswald Regular", "Helvetica", sans-serif;
   font-weight: 400;
@@ -36,3 +39,54 @@
 .intro__product-image {
   margin-bottom: 4px;
 }
+
+.intro__button {
+  margin: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    margin-bottom: 0;
+    padding: 63px 117px 530px;
+    width: 768px;
+    background-color: #ffffff;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 29px 265px;
+  }
+
+  .intro__title {
+    margin: 0 0 42px 0;
+    width: 456px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    margin: 0 0 47px 2px;
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .intro__product-image {
+    margin: 0 auto;
+  }
+
+  .intro__button {
+    margin-left: 2px;
+    padding: 16px 11px 16px;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+/*@media (min-width: @desktop-width) {
+
+}
+*/
