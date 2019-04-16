@@ -62,3 +62,32 @@
     border-bottom: 2px solid #68b738;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    margin-right: 0;
+    justify-content: flex-end;
+    width: 570px;
+  }
+
+  .site-list__item {
+    margin-left: 33px;
+    border: none;
+
+    &:nth-of-type(2) {
+      margin-left: 35px;
+    }
+  }
+
+  .site-list__link {
+    padding-bottom: 5px;
+    font-family: "Oswald Regular", "Helvetica", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+
+  .site-list__link--current {
+    border-bottom: 2px solid #ffffff;
+  }
+}

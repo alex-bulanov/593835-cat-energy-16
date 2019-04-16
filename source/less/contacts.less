@@ -1,5 +1,4 @@
 .contacts__wrapper {
-  .wrapper();
   padding: 28px 20px 26px;
   display: flex;
   flex-wrap: wrap;
@@ -49,4 +48,25 @@
   background-image: url("../img/map-pin.png");
   background-repeat: no-repeat;
   transform: scale(0.5);
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    margin: 0 auto;
+    padding: 26px 53px 26px;
+    width: 768px;
+  }
+
+  .contacts__slogan {
+    font-size: 20px;
+    line-height: 25px;
+    width: 160px;
+  }
+
+  .contacts__address {
+    width: 175px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
