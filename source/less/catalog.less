@@ -172,7 +172,10 @@
 
   .catalog__item-content {
     margin: 0;
+    width: 100%;
     flex-direction: column;
+
+    outline: 1px solid red;
   }
 
   .catalog__item-more {
@@ -251,5 +254,29 @@
 
   .catalog__more__button {
     width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding: 188px 20px 0;
+    width: 1300px;
+  }
+
+  .catalog__item {
+    margin-bottom: 142px;
+    width: 245px;
+  }
+
+  .catalog__item-info {
+    padding-right: 20px;
+  }
+
+  .catalog__button {
+    width: 169px;
+  }
+
+  .catalog__more__button {
+    width: 169px;
   }
 }
