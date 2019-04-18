@@ -1,29 +1,32 @@
 .intro {
-  .wrapper();
+  .container();
   margin-bottom: 22px;
   padding-top: 26px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: #63a73a;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#63a73a 0%, #63a73a 305px, #ffffff 305px, #ffffff 100%);
   background-repeat: no-repeat;
+  background-position: 50% 166px, 50% 0, 0 0;
+  word-wrap: break-word;
 }
 
 .intro__title {
-  margin: 0 0 26px 0;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  margin: 0 auto 26px;
+  width: 256px;
+  font-family: "Oswald Regular", "Helvetica", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-  word-wrap: break-word;
 }
 
 .intro__slogan {
-  margin: 0 auto 28px;
+  margin: 0 auto 302px;
   width: 280px;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald Regular", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -31,9 +34,74 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  word-wrap: break-word;
 }
 
 .intro__product-image {
   margin-bottom: 4px;
+}
+
+.intro__button {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    margin-bottom: 0;
+    padding: 63px 117px 530px;
+    width: 768px;
+    background-color: #ffffff;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 29px 265px;
+  }
+
+  .intro__title {
+    margin: 0 0 42px 0;
+    width: 456px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    margin: 0 0 47px 2px;
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .intro__product-image {
+    margin: 0 auto;
+  }
+
+  .intro__button {
+    margin-left: 2px;
+    padding: 16px 11px 16px;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    padding: 222px 118px 188px 188px;
+    width: 1440px;
+    background-color: #63a73a;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg"), linear-gradient(to left, #63a73a 0%, #63a73a 721px, #ffffff 721px, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-position: 560px 142px, 719px 0, 0 0;
+  }
+
+  .intro__title {
+    padding-left: 2px;
+  }
+
+  .intro__slogan {
+    margin-bottom: 52px;
+  }
 }

@@ -1,6 +1,6 @@
-.copyright {
+.copyright__small {
   margin: 0;
-  padding: 16px 20px 35px;
+  padding: 16px 0 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -8,7 +8,7 @@
 }
 
 .copyright__link {
-  font-family: "Arial", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
@@ -24,5 +24,19 @@
 
   &:active .copyright__path {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin: 0 10px 0 auto;
+    padding-top: 11px;
+    width: 204px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin-right: 90px;
   }
 }
