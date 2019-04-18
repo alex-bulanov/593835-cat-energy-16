@@ -1,5 +1,6 @@
 .slider {
   padding-bottom: 34px;
+  outline: 1px solid blue;
 }
 
 .slider__image {
@@ -8,6 +9,8 @@
   padding: 0;
   width: 320px;
   height: 240px;
+
+  outline: 1px solid red;
 }
 
 .slider__toggles {
@@ -33,6 +36,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .slider {
+    background-color: #eaeaea;
+  }
+
+  .slider__image {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .slider {
     background-color: #eaeaea;
   }
