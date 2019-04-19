@@ -1,15 +1,16 @@
 .promotion {
-  .wrapper();
-  margin-bottom: 35px;
-}
-
-.promotion__content {
+  margin: 0 auto 35px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   min-height: 289px;
+  width: 320px;
+
   background-color: #71b548;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
 }
 
 .promotion__img {
@@ -29,4 +30,28 @@
   line-height: 20px;
   text-align: center;
   color: #ffffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .promotion {
+    margin-bottom: 76px;
+    padding: 0 30px;
+    width: 768px;
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-clip: content-box;
+    background-position: top;
+  }
+
+  .promotion__img {
+    align-self: flex-start;
+    margin: 65px auto 62px 90px;
+  }
+
+  .promotion__description {
+    margin: 73px 115px 0 auto;
+    text-align: left;
+  }
 }

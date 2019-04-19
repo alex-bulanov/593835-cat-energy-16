@@ -1,7 +1,7 @@
 .additionals {
-  .wrapper();
-  margin-bottom: 10px;
-  padding-top: 28px;
+  margin: 0 auto 10px;
+  padding: 28px 20px 0;
+  width: 320px;
 }
 
 .additionals__title {
@@ -32,7 +32,7 @@
 }
 
 .additionals__item {
-  padding: 14px 0 18px;
+  padding: 14px 0 17px;
   border-top: 1px solid #cdcdcd;
 
   &:last-of-type {
@@ -78,8 +78,81 @@
 
 .additionals__button {
   .button();
-  padding-bottom: 8px;
+  padding-bottom: 9px;
   width: 100%;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .additionals {
+    margin-bottom: 1px;
+    padding: 36px 30px 40px;
+    width: 768px;
+  }
+
+  .additionals__title {
+    margin-bottom: 30px;
+    padding-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 22px;
+      right: -30px;
+      width: 327px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -30px;
+      width: 28px;
+      height: 3px;
+      background-color: #68b738;
+    }
+  }
+
+  .additionals__additionals-list {
+    margin: 0 auto;
+    padding: 50px 0 29px;
+    list-style: none;
+  }
+
+  .additionals__item {
+    margin-bottom: -1px;
+    padding: 26px 36px 27px 37px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #e6e6e6;
+  }
+
+  .additionals__item-title {
+    margin: 0 0 13px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additionals__item-table {
+    margin: 6px 0 25px auto;
+    width: 226px;
+    font-size: 16px;
+    line-height: 20px;
+    border-collapse: collapse;
+  }
+
+  .additionals__item-table--water {
+    width: 160px;
+  }
+
+  .additionals__item-table--milk {
+    width: 142px;
+  }
+
+  .additionals__item-table--vitamin {
+    width: 218px;
+  }
 }
