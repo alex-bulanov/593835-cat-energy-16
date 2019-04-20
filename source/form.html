@@ -30,7 +30,7 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин «Cat Energy»</h1>
-      <section class="form container">
+      <section class="form">
         <div class="form__wrapper wrapper">
           <h2 class="form__title">Подбор программы</h2>
           <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -38,7 +38,7 @@
         <form class="form__page-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset">
             <legend class="visually-hidden">Личные данные</legend>
-              <div class="form__wrapper wrapper">
+              <div class="form__wrapper">
                 <p class="form__content">
                   <label class="form__content-label form__content-label--name" for="field-name">Имя:*</label>
                   <input  class="form__input form__input--name" type="text" name="name" value="Барсик" id="field-name">
@@ -123,19 +123,19 @@
               </li>
             </ul>
           </fieldset>
-          <div class="wrapper">
+          <div class="form__button-container">
             <button class="form__button" type="submit">Отправить заявку</button>
             <p class="form__сaution">* — Обязательные поля</p>
           </div>
         </form>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <span class="contacts__slogan">приглашаем<br> к сотрудничеству дилеров!</span>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address"><span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span><span class="contacts__city">Санкт-Петербург</span></address>
         </div>
-        <div class="contacts__map container">
+        <div class="contacts__map">
           <div class="contacts__map-pin">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
         </div>
       </section>
