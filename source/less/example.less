@@ -1,7 +1,7 @@
 .example {
   margin: 0 auto;
   padding: 17px 0 0 0;
-  width: 320px;
+  max-width: 320px;
   background-color: #f2f2f2;
 }
 
@@ -47,10 +47,11 @@
 }
 
 .example__plate-text {
+  margin: 0;
   padding: 0 5px;
   position: absolute;
   left: 50%;
-  top: 34px;
+  top: 46px;
   width: 87px;
   font-size: 12px;
   line-height: 12px;
@@ -72,7 +73,7 @@
 @media (min-width: @tablet-width) {
   .example {
     padding: 43px 0 0 0;
-    width: 768px;
+    max-width: 768px;
     background-color: #ffffff;
   }
 
@@ -108,7 +109,7 @@
 
   .example__plate-text {
     left: 50%;
-    top: 48px;
+    top: 63px;
     width: 114px;
     font-size: 14px;
     line-height: 14px;
@@ -125,9 +126,6 @@
   .example__stats {
     margin: 7px 10px 0 auto;
     width: 174px;
-    /* временно для подгонки высоты*/
-    min-height: 265px;
-    /*******************************/
     font-size: 20px;
     line-height: 29px;
     text-align: right;
@@ -136,8 +134,8 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    padding: 0;
-    width: 1300px;
+    padding: 0 110px 69px;
+    max-width: 1440px;
     display: flex;
     align-items: flex-start;
     background-color: #ffffff;
@@ -145,8 +143,9 @@
   }
 
   .example__wrapper {
-    margin-bottom: 68px;
-    padding: 61px 0 0 20px;
+    margin: 0;
+    max-width: 1300px;
+    padding: 61px 0 0 0;
     width: 600px;
   }
 
@@ -180,9 +179,6 @@
     margin-right: auto;
     margin-left: 0;
     width: 350px;
-    /* временно для подгонки высоты*/
-    min-height: 1px;
-    /*******************************/
     text-align: left;
   }
 }
