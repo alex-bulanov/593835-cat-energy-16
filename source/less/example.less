@@ -1,6 +1,7 @@
 .example {
-  .container();
-  padding-top: 17px;
+  margin: 0 auto;
+  padding: 17px 0 0 0;
+  max-width: 320px;
   background-color: #f2f2f2;
 }
 
@@ -31,10 +32,10 @@
   text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+}
 
-  &:last-of-type {
-    margin-right: 0;
-  }
+.example__plate--time {
+  margin-right: 0;
 }
 
 .example__value {
@@ -46,10 +47,11 @@
 }
 
 .example__plate-text {
+  margin: 0;
   padding: 0 5px;
   position: absolute;
   left: 50%;
-  top: 34px;
+  top: 46px;
   width: 87px;
   font-size: 12px;
   line-height: 12px;
@@ -70,9 +72,14 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    padding: 11px 0 0 10px;
-    width: 768px;
+    padding: 43px 0 0 0;
+    max-width: 768px;
     background-color: #ffffff;
+  }
+
+  .example__wrapper {
+    padding-left: 10px;
+    margin-bottom: 221px;
   }
 
   .example__section-title {
@@ -102,7 +109,7 @@
 
   .example__plate-text {
     left: 50%;
-    top: 48px;
+    top: 63px;
     width: 114px;
     font-size: 14px;
     line-height: 14px;
@@ -122,5 +129,56 @@
     font-size: 20px;
     line-height: 29px;
     text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    padding: 0 110px 69px;
+    max-width: 1440px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, #ffffff 196px, #f2f2f2 196px, #f2f2f2);
+  }
+
+  .example__wrapper {
+    margin: 0;
+    max-width: 1300px;
+    padding: 61px 0 0 0;
+    width: 600px;
+  }
+
+  .example__section-title {
+    margin-bottom: 147px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin: 0 auto 67px 0;
+    padding-right: 20px;
+    width: 455px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__plate--weight {
+    margin-left: 0;
+  }
+
+  .example__plate--time {
+    margin: 0 auto 50px 0;
+  }
+
+  .example__plate-text {
+    background-color: #f2f2f2;
+  }
+
+  .example__stats {
+    margin-right: auto;
+    margin-left: 0;
+    width: 350px;
+    text-align: left;
   }
 }

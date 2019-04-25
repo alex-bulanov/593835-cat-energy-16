@@ -1,6 +1,10 @@
+.copyright {
+  max-width: 320px;
+}
+
 .copyright__small {
   margin: 0;
-  padding: 16px 0 35px;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -27,16 +31,13 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width), (min-width: @desktop-width) {
   .copyright {
-    margin: 0 10px 0 auto;
-    padding-top: 11px;
-    width: 204px;
+    max-width: 204px;
+    margin: 0 0 0 auto;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .copyright {
-    margin-right: 90px;
+  .copyright__small {
+    padding-top: 0;
   }
 }

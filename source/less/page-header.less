@@ -1,5 +1,6 @@
 .page-header {
-  .container();
+  max-width: 320px;
+  margin: 0 auto;
   padding-top: 13px;
   display: flex;
   flex-direction: column;
@@ -11,7 +12,8 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    width: 768px;
+    padding-bottom: 10px;
+    max-width: 768px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -27,7 +29,7 @@
     padding: 45px 40px;
     position: absolute;
     left: 50%;
-    width: 1300px;
+    min-width: 1300px;
     background-color: transparent;
     transform: translateX(-50%);
   }

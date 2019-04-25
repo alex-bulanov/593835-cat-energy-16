@@ -1,15 +1,13 @@
 .promotion {
-  .wrapper();
-  margin-bottom: 35px;
-}
-
-.promotion__content {
+  margin: 0 auto 35px;
   display: flex;
   flex-direction: column;
   min-height: 289px;
+  width: 280px;
   background-color: #71b548;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .promotion__img {
@@ -29,4 +27,35 @@
   line-height: 20px;
   text-align: center;
   color: #ffffffff;
+}
+
+@media (min-width: @tablet-width) (max-width: @desktop-width) {
+  .promotion {
+    margin-bottom: 35px;
+    width: 708px;
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-position: top;
+  }
+
+  .promotion__img {
+    align-self: flex-start;
+    margin: 65px auto 62px 90px;
+  }
+
+  .promotion__description {
+    margin: 73px 115px 0 auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promotion {
+    margin-right: 40px;
+    margin-left: auto;
+    width: 245px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
 }
