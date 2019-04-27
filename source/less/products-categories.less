@@ -1,7 +1,6 @@
 .products-categories {
   margin: 0 auto;
   padding: 0 20px;
-  /*max-width: 320px;*/
 }
 
 .categories-list {
@@ -137,13 +136,18 @@
   .products-categories {
     margin-bottom: 45px;
     padding: 0 30px;
-    max-width: 768px;
+  }
+
+  .categories-list {
+    flex-direction: column;
+    align-items: center;
   }
 
   .categories-list__item {
-    flex-grow: 1;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     padding: 76px 53px 62px 53px;
+    flex-grow: 0;
+    width: 708px;
   }
 
   .categories-list__title {
@@ -236,6 +240,7 @@
 
   .categories-list {
     padding: 0 10px;
+    flex-direction: row;
     justify-content: space-between;
   }
 
