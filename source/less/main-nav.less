@@ -2,19 +2,22 @@
   position: relative;
 }
 
-.main-nav__toggle {
+.main-nav--opened .main-nav__toggle {
+  padding: 10px;
   position: absolute;
   top: -46px;
-  right: 32px;
+  right: 20px;
   width: 24px;
   height: 24px;
   font-size: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
+    left: 0;
     width: 24px;
     height: 2px;
     background-color: #000000;
@@ -24,6 +27,7 @@
   &::after {
     content: "";
     position: absolute;
+    left: 0;
     width: 24px;
     height: 2px;
     background-color: #000000;
@@ -31,8 +35,62 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle {
+  padding: 10px;
+  position: absolute;
+  top: -42px;
+  right: 20px;
+  font-size: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  border: none;
+  border-top: 2px solid #000000;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    border-top: 2px solid #000000;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    border-top: 2px solid #000000;
+  }
+}
+
+.main-nav--closed .site-list {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--opened .site-list {
+  display: flex;
+}
+
+.main-nav--nojs .site-list {
+  display: flex;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--closed .site-list {
+    display: flex;
   }
 }

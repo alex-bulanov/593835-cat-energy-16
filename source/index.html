@@ -13,7 +13,7 @@
       <a class="page-header__logo logo" href="" id="index-logo">
         <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="логотип магазина «Cat Energy»">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__site-list site-list">
           <li class="site-list__item">
@@ -82,13 +82,18 @@
             <span class="example__value example__value--time">60 дней</span>
             <p class="example__plate-text example__plate-text--time">затрачено времени</p>
           </div>
-          <p class="example__stats">Затраты на питание: 15 000 руб.</p>
+          <p class="example__stats">Затраты на питание: <span class="example__stats-value">15 000 руб.</span></p>
         </div>
         <div class="slider">
-          <img class="slider__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до">
-          <div class="slider__toggles">
-            <button class="slider__toggle" type="button">Было</button>
-            <button class="slider__toggle" type="button">Стало</button>
+          <h2 class="visually-hidden">Слайдер</h2>
+          <div class="slider__image-container">
+            <div class="slider__image-container-before"></div>
+            <div class="slider__image-container-after"></div>
+          </div>
+          <input class="slader__range" type="range" min="0" max="2" step="1">
+          <div class="slider__controls">
+            <button class="slider__slider-controls-item slider__slider-controls-item--1">Было</button>
+            <button class="slider__slider-controls-item slider__slider-controls-item--2">Стало</button>
           </div>
         </div>
       </section>
@@ -160,7 +165,7 @@
           </a>
         </li>
       </ul>
-      <div class="copyright wrapper"><small class="copyright__small">
+      <div class="copyright"><small class="copyright__small">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Интерактивные онлайн-курсы HTML Academy" target="_blank" rel="nofollow noopener">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener" aria-label="Интерактивные онлайн-курсы HTML Academy" title="Интерактивные онлайн-курсы HTML Academy">
           <svg width="41" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -4 60 60">
@@ -170,5 +175,6 @@
       </small></div>
       </div>
     </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
