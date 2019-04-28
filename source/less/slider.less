@@ -43,6 +43,11 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   z-index: 10;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 320px 240px;
+  }
 }
 
 .slider__image-container-after {
@@ -53,6 +58,11 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   z-index: -10;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/after-mobile@2x.png");
+    background-size: 320px 240px;
+  }
 }
 
 .slider__range {
@@ -110,6 +120,11 @@
     background-repeat: no-repeat;
     background-position: 46px 27px, 0 0;
     z-index: 10;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, #ffffff, #ffffff 196px, #f2f2f2 196px, #f2f2f2);
+      background-size: 690px 517px, 100%;
+    }
   }
 
   .slider__image-container-after {
@@ -122,6 +137,11 @@
     background-repeat: no-repeat;
     background-position: -338px 27px, 0 0;
     z-index: 10;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, #ffffff, #ffffff 196px, #eaeaea 196px, #eaeaea);
+      background-size: 690px 517px, 100%;
+    }
   }
 
   .slider__controls {
