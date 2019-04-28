@@ -1,7 +1,7 @@
 .form {
   margin: 0 auto;
   padding: 15px 0 32px;
-  /*max-width: 320px;*/
+  border-top: 1px solid #e6e6e6;
 }
 
 .form__title {
@@ -308,7 +308,7 @@
   .form {
     margin: 0 auto;
     padding: 54px 30px 0;
-    /*max-width: 768px;*/
+    border-top: none;
   }
 
   .form__wrapper {
@@ -377,7 +377,7 @@
   }
 
   .form__fieldset--program {
-    margin: 0 41px 75px 41px;
+    margin: 0 37px 75px 41px;
     padding: 15px 29px 20px;
     border: 1px solid #ededed;
   }
@@ -432,7 +432,7 @@
     &::after {
       top: 22px;
       left: 70px;
-      width: calc(100% + 45px);
+      width: calc(100% + 35px);
     }
   }
 
@@ -471,6 +471,12 @@
   .form__fieldset-title--comments {
     margin: 0 0 76px -40px;
     padding: 0 calc(100% - 259px) 0 40px;
+
+    &::after {
+      top: 22px;
+      left: 70px;
+      width: calc(100% + 40px);
+    }
   }
 
   .form__textarea {
@@ -490,6 +496,12 @@
   .form__fieldset-title--additionally {
     margin: 0 0 45px -40px;
     padding: 0 calc(100% - 292px) 0 40px;
+
+    &::after {
+      top: 22px;
+      left: 70px;
+      width: calc(100% + 40px);
+    }
   }
 
   .filter-list--checkbox {
@@ -676,7 +688,7 @@
     width: 100%;
   }
 
-  .fieldset__fieldset-wrapper {
+  .form__fieldset-wrapper {
     display: flex;
     justify-content: space-between;
   }
