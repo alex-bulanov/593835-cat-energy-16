@@ -9,6 +9,13 @@
   background-repeat: no-repeat;
   background-position: 50% 166px, 50% 0, 0 0;
   word-wrap: break-word;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg"), linear-gradient(#63a73a 0%, #63a73a 305px, #ffffff 305px, #ffffff);
+    background-position: 50% 166px, 50% 0, 0 0;
+    background-repeat: no-repeat;
+    background-size: 280px 271px, 320px 305px, 100% 320px;
+  }
 }
 
 .intro__title {
@@ -42,6 +49,7 @@
 
 @media (min-width: @tablet-width) {
   .intro__container {
+    max-width: 768px;
     margin-bottom: 0;
     padding: 54px 117px 0;
     min-height: 864px;
@@ -49,6 +57,12 @@
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 29px 255px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-position: 29px 255px;
+      background-size: 709px 609px;
+    }
   }
 
   .intro__title {
@@ -87,9 +101,16 @@
     margin: 0 auto;
     max-width: 1440px;
     background-color: #ffffff;
-    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg"), linear-gradient(to left, #63a73a 0%, #63a73a 721px, #ffffff 721px, #ffffff 100%);
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg"), linear-gradient(to left, #63a73a 0%, #63a73a 351px, #ffffff 351px, #ffffff 100%);
     background-repeat: no-repeat;
     background-position: 560px 142px, 719px 0, 0 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg"), linear-gradient(to left, #63a73a 0%, #63a73a 351px, #ffffff 351px, #ffffff 100%);
+      background-repeat: no-repeat;
+      background-position: 560px 142px, 719px 0, 0 0;
+      background-size: 552px 499px, 720px 696px, 100% 0;
+    }
   }
 
   .intro__container {
