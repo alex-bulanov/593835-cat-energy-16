@@ -1,5 +1,6 @@
 .contacts {
   margin: 0 auto;
+  position: relative;
   background-color: #f2f2f2;
 }
 
@@ -30,6 +31,15 @@
   width: 140px;
   line-height: 20px;
   font-style: normal;
+}
+
+.contacts__frame {
+  margin-bottom: -4px;
+  position: absolute;
+  width: 100%;
+  height: 362px;
+  border: none;
+  z-index: 20;
 }
 
 .contacts__map {
@@ -82,6 +92,10 @@
     margin-bottom: 20px;
   }
 
+  .contacts__frame {
+    height: 396px;
+  }
+
   .contacts__map {
     width: 768px;
     height: 396px;
@@ -119,6 +133,11 @@
 
   .contacts__address {
     text-align: left;
+  }
+
+  .contacts__frame {
+    margin-bottom: -4px;
+    height: 400px;
   }
 
   .contacts__map {
