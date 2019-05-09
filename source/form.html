@@ -64,7 +64,7 @@
                 </p>
                 <p class="form__content">
                   <label class="form__content-label form__content-label--weight" for="field-weight">Вес (кг):*</label>
-                  <input class="form__input form__input--weight" type="text" name="weight" placeholder="7" id="field-weight" required>
+                  <input class="form__input form__input--weight" type="text" name="weight" placeholder="7" id="field-weight" pattern="^[ 0-9]+$" required>
                 </p>
                 <p class="form__content">
                   <label class="form__content-label form__content-label--age" for="field-age">Возраст (лет):</label>
@@ -100,14 +100,14 @@
             <div class="form__fieldset-wrapper">
               <p class="form__content form__content--email">
                 <label class="form__content-label form__content-label--email" for="field-email">E-mail:*</label>
-                <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="field-email" required>
+                <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="field-email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="Email должен быть фомате kuklachev@gmail.com" required>
                 <svg width="20" height="20" viewBox="0 0 20 16">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
               </p>
               <p class="form__content form__content--phone">
                 <label class="form__content-label form__content-label--phone" for="field-phone">Телефон:*</label>
-                <input class="form__input form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="field-phone" required>
+                <input class="form__input form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="field-phone" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Номер должен содержать 11 цифр и начинаться с 8 в фомате 8 (960) 900-60-90" required>
                 <svg width="20" height="20" viewBox="0 0 20 20">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
