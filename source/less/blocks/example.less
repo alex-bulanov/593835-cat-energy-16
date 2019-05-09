@@ -13,7 +13,8 @@
 
 .example__section-title {
   .section-title();
-  margin: 0 auto 23px 0;
+  width: 100%;
+  margin: 0 0 23px 0;
 }
 
 .example__description {
@@ -38,7 +39,7 @@
 }
 
 .example__value {
-  font-family: "Oswald Regular", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -62,7 +63,7 @@
 .example__stats {
   margin: 0 auto 34px;
   width: 100%;
-  font-family: "Oswald Regular", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -72,6 +73,7 @@
 
 @media (min-width: @tablet-width) {
   .example {
+    max-width: 768px;
     padding: 43px 0 0 0;
     background-color: #ffffff;
   }
@@ -79,6 +81,7 @@
   .example__wrapper {
     padding-left: 10px;
     margin-bottom: 25px;
+    justify-content: space-between;
   }
 
   .example__section-title {
@@ -99,6 +102,10 @@
     padding-top: 15px;
     width: 162px;
     height: 72px;
+  }
+
+  .example__plate:nth-of-type(2) {
+    margin-right: auto;
   }
 
   .example__value {
@@ -123,7 +130,7 @@
   }
 
   .example__stats {
-    margin: 7px 10px 0 auto;
+    margin: 7px 10px 0 0;
     width: 174px;
     font-size: 20px;
     line-height: 29px;
@@ -145,8 +152,7 @@
   .example__wrapper {
     margin: 0;
     padding: 61px 0 0 110px;
-    max-width: 1300px;
-    width: 600px;
+    width: 580px;
   }
 
   .example__section-title {
