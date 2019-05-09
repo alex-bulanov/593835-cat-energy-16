@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   email.addEventListener('change', function(e) {
-    if (email.value == false || email.validity.typeMismatch || email.validity.patternMismatch) {
+    if (email.value == "" || email.validity.typeMismatch || email.validity.patternMismatch) {
       email.classList.add('form__input--invalid');
     } else {
       email.classList.remove('form__input--invalid');
