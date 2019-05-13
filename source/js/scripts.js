@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   phone.addEventListener('change', function(e) {
-    if (phone.value == false || phone.validity.typeMismatch || phone.validity.patternMismatch) {
+    if (phone.value == "" || phone.validity.typeMismatch || phone.validity.patternMismatch) {
       phone.classList.add('form__input--invalid');
     } else {
       phone.classList.remove('form__input--invalid');
