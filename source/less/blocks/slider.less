@@ -347,6 +347,10 @@
     background-repeat: no-repeat;
     background-position: -40px 6px, 0 0;
     z-index: 10;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, #ffffff, #ffffff 196px, #f2f2f2 196px, #f2f2f2);
+    }
   }
 
   .slider__image-container-after {
@@ -358,6 +362,10 @@
     background-position: -365px 6px, 0 0;
     border-color: #ffffff;
     z-index: 10;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, #ffffff, #ffffff 196px, #eaeaea 196px, #eaeaea);
+    }
   }
 
   .slider__range {
