@@ -205,6 +205,12 @@
   }
 }
 
+.checkbox-indicator:hover {
+  &::after {
+    border: 1px solid #bcbcbc;
+  }
+}
+
 .form__content-label--checkbox {
   padding-left: 47px;
   position: relative;
@@ -248,6 +254,10 @@
 
 .form-input:disabled + .checkbox-indicator {
   opacity: 0.3;
+
+  &::after {
+    border: 1px solid #bababa;
+  }
 }
 
 .form__fieldset-title {
