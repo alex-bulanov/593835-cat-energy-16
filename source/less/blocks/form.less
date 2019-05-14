@@ -172,7 +172,7 @@
   position: relative;
 }
 
-.form-input--radio + .checkbox-indicator {
+.form-input--radio + .form__checkbox-indicator {
   &::after {
     content: "";
     position: absolute;
@@ -185,7 +185,7 @@
   }
 }
 
-.form-input--radio:checked + .checkbox-indicator {
+.form-input--radio:checked + .form__checkbox-indicator {
   &::before {
     content: "";
     position: absolute;
@@ -198,14 +198,14 @@
   }
 }
 
-.form-input--radio:hover + .checkbox-indicator,
-.form-input--radio:focus + .checkbox-indicator {
+.form-input--radio:hover + .form__checkbox-indicator,
+.form-input--radio:focus + .form__checkbox-indicator {
   &::after {
     border: 1px solid #bcbcbc;
   }
 }
 
-.checkbox-indicator:hover {
+.form__checkbox-indicator:hover {
   &::after {
     border: 1px solid #bcbcbc;
   }
@@ -216,7 +216,7 @@
   position: relative;
 }
 
-.form-input--сheckbox + .checkbox-indicator {
+.form-input--сheckbox + .form__checkbox-indicator {
   &::after {
     content: "";
     position: absolute;
@@ -228,7 +228,7 @@
   }
 }
 
-.form-input--сheckbox:checked + .checkbox-indicator {
+.form-input--сheckbox:checked + .form__checkbox-indicator {
   &::before {
     content: "";
     position: absolute;
@@ -241,18 +241,18 @@
   }
 }
 
-.form-input--сheckbox:hover + .checkbox-indicator,
-.form-input--сheckbox:focus + .checkbox-indicator {
+.form-input--сheckbox:hover + .form__checkbox-indicator,
+.form-input--сheckbox:focus + .form__checkbox-indicator {
   &::after {
     border: 1px solid #bababa;
   }
 }
 
-.form-input:active + .checkbox-indicator {
+.form-input:active + .form__checkbox-indicator {
   opacity: 0.3;
 }
 
-.form-input:disabled + .checkbox-indicator {
+.form-input:disabled + .form__checkbox-indicator {
   opacity: 0.3;
 
   &::after {
@@ -443,7 +443,7 @@
     padding-left: 58px;
   }
 
-  .form-input--radio + .checkbox-indicator {
+  .form-input--radio + .form__checkbox-indicator {
     &::after {
       top: 11px;
       left: -1px;
@@ -452,7 +452,7 @@
     }
   }
 
-  .form-input--radio:checked + .checkbox-indicator {
+  .form-input--radio:checked + .form__checkbox-indicator {
     &::before {
       top: 22px;
       left: 10px;
@@ -568,7 +568,7 @@
     padding-top: 5px;
   }
 
-  .form-input--сheckbox + .checkbox-indicator {
+  .form-input--сheckbox + .form__checkbox-indicator {
     &::after {
       top: 1px;
       left: 1px;
@@ -577,7 +577,7 @@
     }
   }
 
-  .form-input--сheckbox:checked + .checkbox-indicator {
+  .form-input--сheckbox:checked + .form__checkbox-indicator {
     &::before {
       top: 13px;
       left: 11px;
@@ -726,7 +726,7 @@
     padding: 15px 10px 5px 59px;
   }
 
-  .form-input--radio:checked + .checkbox-indicator {
+  .form-input--radio:checked + .form__checkbox-indicator {
     &::before {
       top: 22px;
       left: 10px;
